@@ -24,7 +24,7 @@ exports.find = (req, res) => {
     ["%" + searchTerm + "%", "%" + searchTerm + "%"],
     (err, rows) => {
       if (!err) {
-        res.render("home", { rows });
+        res.send(rows);
       } else {
         console.log(err);
       }
@@ -48,7 +48,7 @@ exports.create = (req, res) => {
     [first_name, last_name, email, phone, comments],
     (err, rows) => {
       if (!err) {
-        res.render("add-user", { alert: "User added successfully." });
+       res.send(rows);
       } else {
         console.log(err);
       }
@@ -65,7 +65,7 @@ exports.edit = (req, res) => {
     [req.params.id],
     (err, rows) => {
       if (!err) {
-        res.render("edit-user", { rows });
+        res.send(rows);
       } else {
         console.log(err);
       }
@@ -91,10 +91,7 @@ exports.update = (req, res) => {
             // When done with the connection, release it
 
             if (!err) {
-              res.render("edit-user", {
-                rows,
-                alert: `${first_name} has been updated.`,
-              });
+              res.send(rows);
             } else {
               console.log(err);
             }
@@ -133,7 +130,7 @@ exports.delete = (req, res) => {
     (err, rows) => {
       if (!err) {
         let removedUser = encodeURIComponent("User successeflly removed.");
-        res.redirect("/?removed=" + removedUser);
+        res.send(rows);
       } else {
         console.log(err);
       }
@@ -150,7 +147,7 @@ exports.viewall = (req, res) => {
     [req.params.id],
     (err, rows) => {
       if (!err) {
-        res.render("view-user", { rows });
+        res.send(rows);
       } else {
         console.log(err);
       }

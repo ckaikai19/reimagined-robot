@@ -1,0 +1,177 @@
+.home-header {
+    background-color: rgba(110, 0, 255, 1);
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 20px;
+}
+
+
+.home-title {
+    color: rgb(241, 241, 241);
+    user-select: none;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.search-container {
+    /* border: 1px solid green; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+    height: 33px;
+}
+
+.input-home {
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    width: 100%;
+    /* padding-left: 40px; */
+    padding: 9px 0px 9px 40px;
+
+}
+
+.search-icon {
+    font-size: 23px;
+    position: relative;
+    bottom: 30px;
+    left: 12px;
+}
+
+.employess-title {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    color: #DDDDDD;
+    line-height: 19px;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.table-outer-container {
+    margin-top: 20px;
+    /* border: 1px solid saddlebrown; */
+    display: flex;
+    justify-content: center;
+}
+
+
+.table-container {
+    /* border: 1px solid green; */
+    width: 90%;
+    /* border-collapse: collapse; */
+    /* border-collapse: separate; */
+    margin-top: -10px;
+    border-spacing: 0px 20px;
+
+}
+
+.table-header th {
+    color: rgb(255, 255, 255);
+    opacity: 0.6;
+    font-size: 15px;
+    font-weight: 500;
+    user-select: none;
+    /* border: 1px solid green; */
+    /* padding: 5px; */
+}
+
+.table-row {
+    background: #253649;
+    padding: 15px;
+    border-radius: 100px;
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: "box-shadow 0.3s";
+}
+
+.table-row:hover{
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.3);
+
+}
+
+td {
+    /* border: 1px solid green; */
+    text-align: center;
+    padding: 15px;
+    /* margin: 5px; */
+    font-size: 16px;
+    color: rgb(227, 227, 227);
+    /* margin-bottom: 100px; */
+}
+
+
+
+.add {
+    padding: 10px 0px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    opacity: 1;
+    width: 100%;
+    background-color: rgba(110, 0, 255, 1);
+    text-align: center;
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.edit-delete-container{
+    /* border: 1px solid green; */
+    display: flex;
+
+}
+
+.edit{
+    font-size: 25px;
+    color: #64FFDB;
+    padding: 0px 5px;
+    cursor: pointer;
+}
+
+.edit:hover{
+    color: #51ccaf;
+}
+
+.delete{
+    font-size: 25px;
+    padding-left: 5px;
+    cursor: pointer;
+    color: rgb(173, 38, 38);
+}
+
+.delete:hover{
+    color: rgb(130, 36, 36);
+
+}
+
+.profile{
+    width: 40px;
+    height: 40px;
+}
+
+.status{
+    width: 15px;
+    height: 15px;
+    padding-right: 7px;
+    position: relative;
+    top: 2px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(37, 45, 51);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(110, 0, 255, 1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(87, 6, 193);
+}

@@ -39,16 +39,36 @@ exports.form = (req, res) => {
 
 // Add new user
 exports.create = (req, res) => {
-  const { first_name, last_name, email, phone, comments } = req.body;
+  const {
+    first_name,
+    last_name,
+    email,
+    phone,
+    comments,
+    position,
+    salary,
+    address,
+    paid,
+  } = req.body;
   let searchTerm = req.body.search;
 
   // User the connection
   connection.query(
-    "INSERT INTO user SET first_name = ?, last_name = ?, email = ?, phone = ?, comments = ?",
-    [first_name, last_name, email, phone, comments],
+    "INSERT INTO user SET first_name = ?, last_name = ?, email = ?, phone = ?, comments = ?, position = ?, salary = ?, address = ?, paid = ?",
+    [
+      first_name,
+      last_name,
+      email,
+      phone,
+      comments,
+      position,
+      salary,
+      address,
+      paid
+    ],
     (err, rows) => {
       if (!err) {
-       res.send(rows);
+        res.send(rows);
       } else {
         console.log(err);
       }
@@ -76,11 +96,32 @@ exports.edit = (req, res) => {
 
 // Update User
 exports.update = (req, res) => {
-  const { first_name, last_name, email, phone, comments } = req.body;
+    const {
+      first_name,
+      last_name,
+      email,
+      phone,
+      comments,
+      position,
+      salary,
+      address,
+      paid,
+    } = req.body;
   // User the connection
   connection.query(
-    "UPDATE user SET first_name = ?, last_name = ?, email = ?, phone = ?, comments = ? WHERE id = ?",
-    [first_name, last_name, email, phone, comments, req.params.id],
+    "UPDATE user SET first_name = ?, last_name = ?, email = ?, phone = ?, comments = ?, position = ?, salary = ?, address = ?, paid = ? WHERE id = ?",
+    [
+      first_name,
+      last_name,
+      email,
+      phone,
+      comments,
+      position,
+      salary,
+      address,
+      paid,
+      req.params.id,
+    ],
     (err, rows) => {
       if (!err) {
         // User the connection

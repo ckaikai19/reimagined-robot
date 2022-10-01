@@ -66,17 +66,20 @@
     /* border-collapse: separate; */
     margin-top: -10px;
     border-spacing: 0px 20px;
+    max-width: 1632px;
 
 }
 
 .table-header th {
-    color: rgb(255, 255, 255);
-    opacity: 0.6;
+    color: rgb(167, 167, 167);
+    /* opacity: 0.6; */
     font-size: 15px;
     font-weight: 500;
     user-select: none;
     /* border: 1px solid green; */
     /* padding: 5px; */
+    text-align: left;
+    padding-left: 10px;
 }
 
 .table-row {
@@ -88,14 +91,14 @@
     transition: "box-shadow 0.3s";
 }
 
-.table-row:hover{
+.table-row:hover {
     box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.3);
 
 }
 
 td {
     /* border: 1px solid green; */
-    text-align: center;
+    text-align: left;
     padding: 15px;
     /* margin: 5px; */
     font-size: 16px;
@@ -118,46 +121,193 @@ td {
     cursor: pointer;
 }
 
-.edit-delete-container{
+.edit-delete-container {
     /* border: 1px solid green; */
     display: flex;
 
 }
 
-.edit{
+.edit {
     font-size: 25px;
     color: #64FFDB;
     padding: 0px 5px;
     cursor: pointer;
 }
 
-.edit:hover{
+.edit:hover {
     color: #51ccaf;
 }
 
-.delete{
+.delete {
     font-size: 25px;
     padding-left: 5px;
     cursor: pointer;
     color: rgb(173, 38, 38);
 }
 
-.delete:hover{
+.delete:hover {
     color: rgb(130, 36, 36);
 
 }
 
-.profile{
+.profile {
     width: 40px;
     height: 40px;
 }
 
-.status{
+.status {
     width: 15px;
     height: 15px;
     padding-right: 7px;
     position: relative;
     top: 2px;
+}
+
+.popup-content {
+    /* border: 1px solid green; */
+    margin: 0px;
+    background-color: rgba(27, 41, 57, 1);
+    width: 733px;
+}
+
+[role='tooltip'].popup-content {
+    width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+}
+
+.popup-overlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+[data-popup='tooltip'].popup-overlay {
+    background: transparent;
+}
+
+.add-container {
+    /* border: 1px solid green; */
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.add-title {
+    font-size: 18px;
+    color: white;
+    /* border: 1px solid yellow; */
+    font-weight: 300;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.inputs-container {
+    /* border: 1px solid brown; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user-data-container {
+    /* border: 1px solid rebeccapurple; */
+    padding: 10px;
+}
+
+.user-data-title {
+    font-size: 14px;
+    /* font-weight: 500; */
+    color: white;
+    opacity: 0.5;
+    font-weight: 400;
+
+
+}
+
+.user-data {
+    /* border: 1px solid white; */
+    padding: 0px;
+    background: #253649;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 30px;
+    color: white;
+    margin-top: 10px;
+    outline: none;
+    border: none;
+}
+
+.first,
+.last {
+    width: 80px;
+}
+
+.salary {
+    padding: 10px;
+    background: #253649;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 30px;
+    color: white;
+    margin-top: 10px;
+    outline: none;
+    width: 90px;
+    border: none;
+    height: 40px;
+}
+
+.droplist {
+    padding: 10px;
+    background: #253649;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 30px;
+    color: white;
+    margin-top: 10px;
+    outline: none;
+    width: 120px;
+    height: 60px;
+    border: none;
+}
+
+.comment-area {
+    padding: 10px;
+    background: #253649;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 30px;
+    color: white;
+    margin-top: 10px;
+    outline: none;
+    width: 500px;
+    height: 60px;
+    border: none;
+    resize: none;
+}
+
+.submit-container {
+    display: flex;
+    justify-content: right;
+    padding-right: 15px;
+}
+
+.submit {
+    /* border: 1px solid green; */
+    font-size: 18px;
+    color: white;
+    /* border: 1px solid yellow; */
+    font-weight: 300;
+    background-color: rgba(110, 0, 255, 1);
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 4px;
+    /* margin-left: 100px; */
+
+
+}
+
+.submit:hover{
+    background-color: rgb(91, 3, 207);
 }
 
 ::-webkit-scrollbar {

@@ -1,0 +1,82 @@
+.back {
+    font-size: 35px;
+    color: #64FFDB;
+    cursor: pointer;
+}
+
+.back:hover {
+    color: #43c8a9;
+}
+
+.user-container {
+    /* border: 1px solid salmon; */
+    /* height: 70vh; */
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+}
+
+.user-inner-container{
+    display: flex;
+
+}
+
+.user-left-container {
+    /* border: 3px solid green; */
+    display: flex;
+    user-select: none;
+    /* width: 500px; */
+}
+
+.profile-pik {
+    width: 250px;
+    height: 250px;
+}
+
+.status-container {
+    /* border: 1px solid firebrick; */
+    font-size: 15px;
+    /* font-weight: 500; */
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+
+.user-right-container {
+    /* border: 5px solid yellow; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 647px;
+    margin-left: 20px;
+    user-select: none;
+}
+
+.user-data-container {
+    /* border: 1px solid rebeccapurple; */
+    padding: 10px;
+}
+
+.user-data-title {
+    font-size: 14px;
+    /* font-weight: 500; */
+    color: white;
+    opacity: 0.5;
+    font-weight: 400;
+    
+
+}
+
+.user-data {
+    /* border: 1px solid white; */
+    padding: 15px;
+    background: #253649;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 30px;
+    color: white;
+    margin-top: 10px;
+}

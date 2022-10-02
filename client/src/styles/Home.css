@@ -196,6 +196,7 @@ td {
     font-weight: 300;
     padding-left: 10px;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .inputs-container {
@@ -288,6 +289,7 @@ td {
     display: flex;
     justify-content: right;
     padding-right: 15px;
+    margin-top: 10px;
 }
 
 .submit {
@@ -302,14 +304,20 @@ td {
     user-select: none;
     border-radius: 4px;
     /* margin-left: 100px; */
-
-
 }
 
-.submit:hover{
+.close{
+    background-color: rgb(173, 38, 38);
+    margin-right: 10px;
+}
+
+.submit:hover {
     background-color: rgb(91, 3, 207);
 }
 
+.close:hover{
+    background-color: rgb(126, 28, 28);
+}
 ::-webkit-scrollbar {
     width: 10px;
 }

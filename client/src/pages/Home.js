@@ -30,8 +30,9 @@ function Home() {
   useEffect(() => {
     async function getUsers() {
       const posts = await axios
-        .get(`http://localhost:5001`)
+        .get(`https://user-managme.herokuapp.com/`)
         .then((res) => {
+
           setUsers(res.data);
         })
         .catch(() => console.log("get users Failed"));
@@ -63,7 +64,7 @@ function Home() {
         paid: "true",
       };
 
-      await axios.post("http://localhost:5001/adduser", data).then((res) => {
+      await axios.post("https://user-managme.herokuapp.com/adduser", data).then((res) => {
         toast.success("Employee Added", {
           position: "top-right",
           autoClose: 5000,
@@ -94,7 +95,7 @@ function Home() {
 
   async function deleteEmployee(id) {
     await axios
-      .get(`http://localhost:5001/${id}`)
+      .get(`https://user-managme.herokuapp.com/${id}`)
       .then((res) => {
         toast.success("Employee Deleted", {
           position: "top-right",
@@ -128,7 +129,7 @@ function Home() {
       };
 
       await axios
-        .post(`http://localhost:5001/`, reqEmployee)
+        .post(`https://user-managme.herokuapp.com/`, reqEmployee)
         .then((res) => {
           setUsers(res.data);
         })

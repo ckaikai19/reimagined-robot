@@ -16,7 +16,7 @@ function Details() {
   useEffect(() => {
     async function getUser() {
       const posts = await axios
-        .get(`http://localhost:5001/viewuser${window.location.pathname}`)
+        .get(`https://user-managme.herokuapp.com/viewuser${window.location.pathname}`)
         .then((res) => {
           setUser(res.data);
         })
